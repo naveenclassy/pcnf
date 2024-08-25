@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDNF-PCNF Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PDNF-PCNF GENERATOR</h1>
+        <table id="truthTable">
+            <tr>
+                <th>p</th>
+                <th>q</th>
+                <th>r</th>
+                <th>Select</th>
+            </tr>
+            <tr><td>T</td><td>T</td><td>T</td><td><input type="checkbox"></td></tr>
+            <tr><td>T</td><td>T</td><td>F</td><td><input type="checkbox"></td></tr>
+            <tr><td>T</td><td>F</td><td>T</td><td><input type="checkbox"></td></tr>
+            <tr><td>T</td><td>F</td><td>F</td><td><input type="checkbox"></td></tr>
+            <tr><td>F</td><td>T</td><td>T</td><td><input type="checkbox"></td></tr>
+            <tr><td>F</td><td>T</td><td>F</td><td><input type="checkbox"></td></tr>
+            <tr><td>F</td><td>F</td><td>T</td><td><input type="checkbox"></td></tr>
+            <tr><td>F</td><td>F</td><td>F</td><td><input type="checkbox"></td></tr>
+        </table>
+        <center>
+            <p style="color:dark black">SELECT ROWS WITH TRUE TO GENERATE PDNF-PCNF</p>
+        </center>
+        <div class="button-group">
+            <button onclick="submitResults()">Submit</button>
+            <button onclick="clearResults()">Clear</button>
+        </div>
+        <div class="output-container">
+            <div class="output-box" id="output">
+                <h2>PDNF:</h2>
+                <p></p>
+            </div>
+            <div class="output-box" id="unselectedOutput">
+                <h2>PCNF:</h2>
+                <p></p>
+            </div>
+            
+            
+        </div>
+        <p style="color: black;">This web page was designed by sman³</p>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
